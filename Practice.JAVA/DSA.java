@@ -27,12 +27,28 @@ public class DSA {
 // String name = sc.nextLine();
 // System.out.println(name);
 
-Scanner abhi = new Scanner(System.in);
+/// input == output
 
-int a = abhi.nextInt();
-int b = abhi.nextInt();
-int sum = a+b;
-System.out.println(sum);
+
+// Scanner abhi = new Scanner(System.in);
+
+// int a = abhi.nextInt();
+// int b = abhi.nextInt();
+// int sum = a+b;
+// System.out.println(sum);
+
+
+Scanner ab = new Scanner(System.in);
+int age = ab.nextInt();
+
+if(age>18){
+  System.out.println("Adalt");
+
+}
+else{
+  System.out.println("not Adalt");
+
+}
 
 
 
