@@ -3,15 +3,33 @@
 
 //questions 1//
 
-let n = 5;
-let string = "";
-for (let i = 1; i <= n; i++) {
-  for (let j = 0; j < n - i; j++) {
-    string += " ";
-  }
-  for (let k = 0; k < i; k++) {
-    string += "*";
-  }
-  string += "\n";
+// let n = 5;
+// let string = "";
+// for (let i = 1; i <= n; i++) {
+//   for (let j = 0; j < n - i; j++) {
+//     string += " ";
+//   }
+//   for (let k = 0; k < i; k++) {
+//     string += "*";
+//   }
+//   string += "\n";
+// }
+// console.log(string);
+
+
+//questions 2//
+
+let rows = 5;
+let pattern = "";
+
+
+for (let n = 1; n <= rows; n++) {
+   for (let space = 1; space <= rows - n; space++) {
+      pattern += " ";
+   }
+   for (let num = 1; num <= 2 * n - 1; num++) {
+      pattern += "*";
+   }
+   pattern += "\n";
 }
-console.log(string);
+console.log(pattern);
