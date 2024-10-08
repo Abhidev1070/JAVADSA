@@ -19,16 +19,33 @@
 
 //questions 2//
 
+// let rows = 5;
+// let pattern = "";
+
+
+// for (let n = 1; n <= rows; n++) {
+//    for (let space = 1; space <= rows - n; space++) {
+//       pattern += " ";
+//    }
+//    for (let num = 1; num <= 2 * n - 1; num++) {
+//       pattern += "*";
+//    }
+//    pattern += "\n";
+// }
+// console.log(pattern);
+
+//questions 3//
+
 let rows = 5;
+let variable = 1;
 let pattern = "";
 
 
 for (let n = 1; n <= rows; n++) {
-   for (let space = 1; space <= rows - n; space++) {
-      pattern += " ";
-   }
-   for (let num = 1; num <= 2 * n - 1; num++) {
-      pattern += "*";
+   for (let num = 1; num <= n; num++) {
+      // console.log(num);
+      pattern += variable+" ";
+      variable++;
    }
    pattern += "\n";
 }
