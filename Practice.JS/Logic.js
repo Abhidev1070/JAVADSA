@@ -34,19 +34,19 @@
 // }
 // console.log(pattern);
 
-//questions 3//
+////questions 3////
 
-let rows = 5;
-let variable = 1;
-let pattern = "";
+// let rows = 5;
+// let variable = 1;
+// let pattern = "";
 
 
-for (let n = 1; n <= rows; n++) {
-   for (let num = 1; num <= n; num++) {
-      // console.log(num);
-      pattern += variable+" ";
-      variable++;
-   }
-   pattern += "\n";
-}
-console.log(pattern);
+// for (let n = 1; n <= rows; n++) {
+//    for (let num = 1; num <= n; num++) {
+//       // console.log(num);
+//       pattern += variable+" ";
+//       variable++;
+//    }
+//    pattern += "\n";
+// }
+// console.log(pattern);
