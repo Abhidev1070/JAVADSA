@@ -22,7 +22,6 @@
 // let rows = 5;
 // let pattern = "";
 
-
 // for (let n = 1; n <= rows; n++) {
 //    for (let space = 1; space <= rows - n; space++) {
 //       pattern += " ";
@@ -40,7 +39,6 @@
 // let variable = 1;
 // let pattern = "";
 
-
 // for (let n = 1; n <= rows; n++) {
 //    for (let num = 1; num <= n; num++) {
 //       // console.log(num);
@@ -50,3 +48,18 @@
 //    pattern += "\n";
 // }
 // console.log(pattern);
+
+////questions 4////
+
+let rows = 5;
+let pattern = "";
+for (let n = 1; n <= rows; n++) {
+   for (let space = 1; space <= rows - n; space++) {
+      pattern += " ";
+   }
+   for (let num = 1; num <= n; num++) {
+      pattern += "*";
+   }
+   pattern += "\n";
+}
+console.log(pattern);
