@@ -1,7 +1,19 @@
-// callback  function
+// callback function 1
 
-function greet(name) {
-    console.log('Hi' + ' ' + name);
+// function greet(name) {
+//     console.log('Hi' + ' ' + name);
+// }
+// greet('Peter');
+
+// //function 2// //
+
+function processData(input, callback) {
+    return callback(input);
 }
-greet('Peter');
 
+function toUpperCase(str) {
+    return str.toUpperCase();
+}
+
+// Using the function
+console.log(processData("hello world", toUpperCase)); 
