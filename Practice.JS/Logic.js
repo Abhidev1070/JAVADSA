@@ -51,15 +51,33 @@
 
 ////questions 4////
 
+// let rows = 5;
+// let pattern = "";
+// for (let n = 1; n <= rows; n++) {
+//    for (let space = 1; space <= rows - n; space++) {
+//       pattern += " ";
+//    }
+//    for (let num = 1; num <= n; num++) {
+//       pattern += "*";
+//    }
+//    pattern += "\n";
+// }
+// console.log(pattern);
+
+////questions 5////
+
 let rows = 5;
+
 let pattern = "";
+
 for (let n = 1; n <= rows; n++) {
-   for (let space = 1; space <= rows - n; space++) {
-      pattern += " ";
-   }
    for (let num = 1; num <= n; num++) {
-      pattern += "*";
+      if (num === 1 || num === n || n === rows) pattern += "*";
+      else {
+         pattern += " ";
+      }
    }
    pattern += "\n";
 }
 console.log(pattern);
+
