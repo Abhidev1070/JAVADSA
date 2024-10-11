@@ -66,18 +66,42 @@
 
 ////questions 5////
 
+// let rows = 5;
+
+// let pattern = "";
+
+// for (let n = 1; n <= rows; n++) {
+//    for (let num = 1; num <= n; num++) {
+//       if (num === 1 || num === n || n === rows) pattern += "*";
+//       else {
+//          pattern += " ";
+//       }
+//    }
+//    pattern += "\n";
+// }
+// console.log(pattern);
+
+
+
+////questions 6////
+
 let rows = 5;
-
+let char1 = "*";
+let char2 = "*";
 let pattern = "";
-
 for (let n = 1; n <= rows; n++) {
-   for (let num = 1; num <= n; num++) {
-      if (num === 1 || num === n || n === rows) pattern += "*";
-      else {
-         pattern += " ";
-      }
+   for (let num = 1; num <= 6 - n; num++) {
+      pattern += char1;
    }
    pattern += "\n";
 }
-console.log(pattern);
+pattern += "\n";
 
+for (let n = 1; n <= rows; n++) {
+   for (let num = 1; num <= n; num++) {
+      pattern += char2;
+   }
+   pattern += "\n";
+}
+
+console.log(pattern);
