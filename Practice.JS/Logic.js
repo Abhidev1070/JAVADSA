@@ -85,23 +85,42 @@
 
 ////questions 6////
 
-let rows = 5;
-let char1 = "*";
-let char2 = "*";
-let pattern = "";
-for (let n = 1; n <= rows; n++) {
-   for (let num = 1; num <= 6 - n; num++) {
-      pattern += char1;
-   }
-   pattern += "\n";
-}
-pattern += "\n";
+// let rows = 5;
+// let char1 = "*";
+// let char2 = "*";
+// let pattern = "";
+// for (let n = 1; n <= rows; n++) {
+//    for (let num = 1; num <= 6 - n; num++) {
+//       pattern += char1;
+//    }
+//    pattern += "\n";
+// }
+// pattern += "\n";
 
-for (let n = 1; n <= rows; n++) {
-   for (let num = 1; num <= n; num++) {
-      pattern += char2;
-   }
-   pattern += "\n";
-}
+// for (let n = 1; n <= rows; n++) {
+//    for (let num = 1; num <= n; num++) {
+//       pattern += char2;
+//    }
+//    pattern += "\n";
+// }
 
-console.log(pattern);
+// console.log(pattern);
+
+////questions 7 ////
+
+const reversePyramid = (input) => {
+   let patternCapturer = "";
+ 
+   for (let i = 0; i < input; i++) {
+     for (let j = 0; j < i; j++) {
+       patternCapturer += " ";
+     }
+     for (let k = 0; k < 2 * (input - i) - 1; k++) {
+       patternCapturer += "*";
+     }
+     patternCapturer += "\n";
+   }
+   console.log(patternCapturer);
+ };
+ 
+ reversePyramid(5);
