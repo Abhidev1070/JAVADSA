@@ -127,20 +127,47 @@
 
 ////questions 8 ////
 
-const rightArrowPattern = (input) => {
+// const rightArrowPattern = (input) => {
+//   let patternCapturer = "";
+//   for (let i = 1; i <= input; i++) {
+//     for (let j = 1; j <= i; j++) {
+//       patternCapturer += "* ";
+//     }
+//     patternCapturer += "\n";
+//   }
+//   for (let i = 1; i < input; i++) {
+//     for (let j = input - 1; j >= i; j--) {
+//       patternCapturer += "* ";
+//     }
+//     patternCapturer += "\n";
+//   }
+//   console.log(patternCapturer);
+// };
+// rightArrowPattern(5);
+
+////questions 9 ////
+
+const printDiamond = (input) => {
   let patternCapturer = "";
   for (let i = 1; i <= input; i++) {
-    for (let j = 1; j <= i; j++) {
-      patternCapturer += "* ";
+    for (let j = 1; j <= input - i; j++) {
+      patternCapturer += " ";
+    }
+    for (let k = 0; k < 2 * i - 1; k++) {
+      patternCapturer += "*";
     }
     patternCapturer += "\n";
   }
-  for (let i = 1; i < input; i++) {
-    for (let j = input - 1; j >= i; j--) {
-      patternCapturer += "* ";
+  for (let i = 0; i < input; i++) {
+    for (let j = 0; j < i; j++) {
+      patternCapturer += " ";
+    }
+    for (let k = 0; k < 2 * (input - i) - 1; k++) {
+      patternCapturer += "*";
     }
     patternCapturer += "\n";
   }
   console.log(patternCapturer);
 };
-rightArrowPattern(5);
+
+printDiamond(10);
