@@ -147,27 +147,42 @@
 
 ////questions 9 ////
 
-const printDiamond = (input) => {
+// const printDiamond = (input) => {
+//   let patternCapturer = "";
+//   for (let i = 1; i <= input; i++) {
+//     for (let j = 1; j <= input - i; j++) {
+//       patternCapturer += " ";
+//     }
+//     for (let k = 0; k < 2 * i - 1; k++) {
+//       patternCapturer += "*";
+//     }
+//     patternCapturer += "\n";
+//   }
+//   for (let i = 0; i < input; i++) {
+//     for (let j = 0; j < i; j++) {
+//       patternCapturer += " ";
+//     }
+//     for (let k = 0; k < 2 * (input - i) - 1; k++) {
+//       patternCapturer += "*";
+//     }
+//     patternCapturer += "\n";
+//   }
+//   console.log(patternCapturer);
+// };
+
+// printDiamond(10);
+
+////questions 10 ////
+
+const print = (input) => {
   let patternCapturer = "";
   for (let i = 1; i <= input; i++) {
-    for (let j = 1; j <= input - i; j++) {
-      patternCapturer += " ";
-    }
-    for (let k = 0; k < 2 * i - 1; k++) {
-      patternCapturer += "*";
-    }
-    patternCapturer += "\n";
-  }
-  for (let i = 0; i < input; i++) {
-    for (let j = 0; j < i; j++) {
-      patternCapturer += " ";
-    }
-    for (let k = 0; k < 2 * (input - i) - 1; k++) {
-      patternCapturer += "*";
+    for (let j = 1; j <= i; j++) {
+      patternCapturer += `${i} `;
     }
     patternCapturer += "\n";
   }
   console.log(patternCapturer);
 };
 
-printDiamond(10);
+print(5);
