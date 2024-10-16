@@ -189,18 +189,37 @@
 
 ////questions 11 ////
 
-let day = 3;
+// let day = 3;
 
-switch (day) {
-    case 1:
-        console.log("Monday");
-        break;
-    case 2:
-        console.log("Tuesday");
-        break;
-    case 3:
-        console.log("Wednesday");
-        break;
-    default:
-        console.log("Invalid day");
+// switch (day) {
+//     case 1:
+//         console.log("Monday");
+//         break;
+//     case 2:
+//         console.log("Tuesday");
+//         break;
+//     case 3:
+//         console.log("Wednesday");
+//         break;
+//     default:
+//         console.log("Invalid day");
+// }
+
+////questions 12 ////
+// const arr = [1, 6, 2, 3, 8, 9, 7];
+// const sortedArr = arr.sort((a, b) => a - b);
+// console.log(sortedArr);
+
+
+////questions 13 ////
+const arr = [1, 6, 2, 3, 8, 9, 7];
+for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length - 1; j++) {
+        if (arr[j] > arr[j + 1]) {
+            let temp = arr[j];
+            arr[j] = arr[j + 1];
+            arr[j + 1] = temp;
+        }
+    }
 }
+console.log("Sorted Array:", arr);
