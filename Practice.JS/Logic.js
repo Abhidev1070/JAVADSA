@@ -174,15 +174,33 @@
 
 ////questions 10 ////
 
-const print = (input) => {
-  let patternCapturer = "";
-  for (let i = 1; i <= input; i++) {
-    for (let j = 1; j <= i; j++) {
-      patternCapturer += `${i} `;
-    }
-    patternCapturer += "\n";
-  }
-  console.log(patternCapturer);
-};
+// const print = (input) => {
+//   let patternCapturer = "";
+//   for (let i = 1; i <= input; i++) {
+//     for (let j = 1; j <= i; j++) {
+//       patternCapturer += `${i} `;
+//     }
+//     patternCapturer += "\n";
+//   }
+//   console.log(patternCapturer);
+// };
 
-print(5);
+// print(5);
+
+////questions 11 ////
+
+let day = 3;
+
+switch (day) {
+    case 1:
+        console.log("Monday");
+        break;
+    case 2:
+        console.log("Tuesday");
+        break;
+    case 3:
+        console.log("Wednesday");
+        break;
+    default:
+        console.log("Invalid day");
+}
