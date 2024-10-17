@@ -212,14 +212,29 @@
 
 
 ////questions 13 ////
-const arr = [1, 6, 2, 3, 8, 9, 7];
-for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr.length - 1; j++) {
-        if (arr[j] > arr[j + 1]) {
-            let temp = arr[j];
-            arr[j] = arr[j + 1];
-            arr[j + 1] = temp;
-        }
-    }
+// const arr = [1, 6, 2, 3, 8, 9, 7];
+// for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr.length - 1; j++) {
+//         if (arr[j] > arr[j + 1]) {
+//             let temp = arr[j];
+//             arr[j] = arr[j + 1];
+//             arr[j + 1] = temp;
+//         }
+//     }
+// }
+// console.log("Sorted Array:", arr);
+
+////questions 14 ////
+
+const arr = [1, 2, 3];
+const newElement = 4;
+
+for (let i = 0; i <= arr.length; i++) {
+  if (i === arr.length) {
+    arr[i] = newElement; 
+    break; 
+  }
 }
-console.log("Sorted Array:", arr);
+console.log(arr);
+
+
