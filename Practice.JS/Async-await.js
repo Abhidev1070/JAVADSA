@@ -2,7 +2,7 @@
   
    /// 1 ////
   
-  async function z() {
-    return 1;
-  }
-  console.log(z()); 
+  // async function z() {
+  //   return 1;
+  // }
+  // console.log(z()); 

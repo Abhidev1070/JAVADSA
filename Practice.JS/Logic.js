@@ -226,15 +226,33 @@
 
 ////questions 14 ////
 
-const arr = [1, 2, 3];
-const newElement = 4;
+// const arr = [1, 2, 3];
+// const newElement = 4;
 
-for (let i = 0; i <= arr.length; i++) {
-  if (i === arr.length) {
-    arr[i] = newElement; 
-    break; 
-  }
+// for (let i = 0; i <= arr.length; i++) {
+//   if (i === arr.length) {
+//     arr[i] = newElement; 
+//     break; 
+//   }
+// }
+// console.log(arr);
+
+
+
+////questions 15 ////
+
+let rows = 5;
+let pattern = "";
+
+for (let n = 1; n <= rows; n++) {
+   for (let space = 1; space <= rows - n; space++) {
+      pattern += " ";
+   }
+   for (let num = 1; num <= 2 * n - 1; num++) {
+      pattern += num;
+   }
+
+   pattern += "\n";
 }
-console.log(arr);
-
+console.log(pattern);
 
