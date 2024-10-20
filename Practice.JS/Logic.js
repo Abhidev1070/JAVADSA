@@ -259,12 +259,25 @@
 
 ////questions 16 ////
 
+// let rows = 5;
+// let pattern = "";
+
+// for (let n = 1; n <= rows; n++) {
+//    for (let num = 1; num <= n; num++) {
+//       pattern += n;
+//    }
+//    pattern += "\n";
+// }
+// console.log(pattern);
+
+
+////questions 17 ////
 let rows = 5;
 let pattern = "";
 
 for (let n = 1; n <= rows; n++) {
-   for (let num = 1; num <= n; num++) {
-      pattern += n;
+   for (let num = 0; num <=rows- n; num++) {
+      pattern += "*";
    }
    pattern += "\n";
 }
