@@ -272,13 +272,30 @@
 
 
 ////questions 17 ////
-let rows = 5;
-let pattern = "";
+// let rows = 5;
+// let pattern = "";
 
-for (let n = 1; n <= rows; n++) {
-   for (let num = 0; num <=rows- n; num++) {
-      pattern += "*";
-   }
-   pattern += "\n";
-}
-console.log(pattern);
+// for (let n = 1; n <= rows; n++) {
+//    for (let num = 0; num <=rows- n; num++) {
+//       pattern += "*";
+//    }
+//    pattern += "\n";
+// }
+// console.log(pattern);
+
+////questions 18 ////
+
+let statement1=0;
+let statement2=0;
+
+for(var i = 1; i <= 3; i++)
+    {
+      statement1++; 
+      for(var j = 1; j <= 4; j++)
+        {
+            statement2++; 
+            
+        }
+    }
+    console.log(statement1)
+    console.log(statement2);   
