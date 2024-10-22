@@ -1,8 +1,8 @@
 //// push method
 
 // const arr = [1, 2, 3];
-const arr =["Oneplus","iphon","Sony","lumia","iphon","HTC Desire"]
-console.log(arr.push("Abhi"));
+// const arr =["Oneplus","iphon","Sony","lumia","iphon","HTC Desire"]
+// console.log(arr.push("Abhi"));
 // console.log(arr.pop());
 // console.log(arr.shift());
 // console.log(arr.unshift());
@@ -14,7 +14,7 @@ console.log(arr.push("Abhi"));
 // console.log(arr.sort());
 // console.log(arr.toString());
 // console.log(arr.join("."));
-// console.log(arr1.reduce(arr1)); // * not andestending of reduce
+// console.log(arr.reduce(arr)); // * not andestending of reduce
 // console.log(arr.toSpliced(1, 0, "Abhi"));
 // console.log(arr.values(arr)); // not andestending of values 
 // console.log(arr.with(2, "Abhi")); 

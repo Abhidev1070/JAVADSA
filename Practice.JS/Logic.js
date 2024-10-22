@@ -285,17 +285,39 @@
 
 ////questions 18 ////
 
-let statement1=0;
-let statement2=0;
+// let statement1=0;
+// let statement2=0;
 
-for(var i = 1; i <= 3; i++)
-    {
-      statement1++; 
-      for(var j = 1; j <= 4; j++)
-        {
-            statement2++; 
+// for(var i = 1; i <= 3; i++)
+//     {
+//       statement1++; 
+//       for(var j = 1; j <= 4; j++)
+//         {
+//             statement2++; 
             
-        }
-    }
-    console.log(statement1)
-    console.log(statement2);   
+//         }
+//     }
+//     console.log(statement1)
+//     console.log(statement2);   
+
+////questions 18 ////
+
+// for (let i = 0; i < 3; i++) console.log(i)
+
+// run begin
+let i = 0;
+// s-1
+if (i < 3) {
+  console.log(i);
+  i++;
+}
+// s-2
+if (i < 3) {
+  console.log(i);
+  i++;
+}
+// s-3
+if (i < 3) {
+  console.log(i);
+  i++;
+}
