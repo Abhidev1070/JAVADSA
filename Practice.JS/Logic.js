@@ -304,20 +304,27 @@
 
 // for (let i = 0; i < 3; i++) console.log(i)
 
-// run begin
-let i = 0;
-// s-1
-if (i < 3) {
-  console.log(i);
-  i++;
-}
-// s-2
-if (i < 3) {
-  console.log(i);
-  i++;
-}
-// s-3
-if (i < 3) {
-  console.log(i);
-  i++;
+// run begin ///
+// let i = 0;
+// // s-1
+// if (i < 3) {
+//   console.log(i);
+//   i++;
+// }
+// // s-2
+// if (i < 3) {
+//   console.log(i);
+//   i++;
+// }
+// // s-3
+// if (i < 3) {
+//   console.log(i);
+//   i++;
+// }
+
+////questions 19 ////
+for (let i = 1; i <= 3; i++) {
+  for (let j = 1; j <= 3; j++) {
+      console.log(`${i} * ${j} = ${i * j}`);
+  }
 }
