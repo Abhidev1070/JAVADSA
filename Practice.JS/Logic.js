@@ -323,8 +323,30 @@
 // }
 
 ////questions 19 ////
-for (let i = 1; i <= 3; i++) {
-  for (let j = 1; j <= 3; j++) {
-      console.log(`${i} * ${j} = ${i * j}`);
+// for (let i = 1; i <= 3; i++) {
+//   for (let j = 1; j <= 3; j++) {
+//       console.log(`${i} * ${j} = ${i * j}`);
+//   }
+// }
+
+
+////questions 20 ////
+
+let dog = {
+  name: "Rover",
+  sound: "Woof",
+  makeSound: function() {
+    console.log(this.sound);
   }
-}
+};
+
+let cat = {
+  name: "Whiskers",
+  sound: "Meow"
+};
+
+let catSound = dog.makeSound.bind(cat);
+
+catSound(); 
+
+
