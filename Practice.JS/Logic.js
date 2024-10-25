@@ -332,21 +332,32 @@
 
 ////questions 20 ////
 
-let dog = {
-  name: "Rover",
-  sound: "Woof",
-  makeSound: function() {
-    console.log(this.sound);
-  }
+// let dog = {
+//   name: "Rover",
+//   sound: "Woof",
+//   makeSound: function() {
+//     console.log(this.sound);
+//   }
+// };
+
+// let cat = {
+//   name: "Whiskers",
+//   sound: "Meow"
+// };
+
+// let catSound = dog.makeSound.bind(cat);
+
+// catSound(); 
+
+////questions 21 ////
+
+// Arrow Function
+// let sayHello = (name) => 'Hello, ' + name;
+// console.log(sayHello('JavaScript!'));
+
+// // Function Expression
+let sayHello = function (name) {
+  return 'Hello, ' + name;
 };
 
-let cat = {
-  name: "Whiskers",
-  sound: "Meow"
-};
-
-let catSound = dog.makeSound.bind(cat);
-
-catSound(); 
-
-
+console.log(sayHello('JavaScript!'));

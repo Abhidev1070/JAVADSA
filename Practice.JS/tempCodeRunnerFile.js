@@ -1,2 +1,3 @@
-;
-arr.push(4); 
+t sayHello = function (name) {
+  return 'Hello, ' + name;
+};
