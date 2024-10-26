@@ -351,13 +351,25 @@
 
 ////questions 21 ////
 
-// Arrow Function
+// // Arrow Function
 // let sayHello = (name) => 'Hello, ' + name;
 // console.log(sayHello('JavaScript!'));
 
 // // Function Expression
-let sayHello = function (name) {
-  return 'Hello, ' + name;
-};
+// let sayHello = function (name) {
+//   return 'Hello, ' + name;
+// };
 
-console.log(sayHello('JavaScript!'));
+// console.log(sayHello('JavaScript!'));
+
+////questions 22 ////
+
+outer: for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 3; j++) {
+    let input = console.log(`Value at coordinates (${i},${j})`, '');
+
+    if (!input) break outer;
+    console.log(`Value at (${i},${j}) is: ${input}`);
+  }
+}
+console.log('Done!');
