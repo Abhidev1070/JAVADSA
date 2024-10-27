@@ -364,12 +364,16 @@
 
 ////questions 22 ////
 
-outer: for (let i = 0; i < 3; i++) {
-  for (let j = 0; j < 3; j++) {
-    let input = console.log(`Value at coordinates (${i},${j})`, '');
+// outer: for (let i = 0; i < 3; i++) {
+//   for (let j = 0; j < 3; j++) {
+//     let input = console.log(`Value at coordinates (${i},${j})`, '');
 
-    if (!input) break outer;
-    console.log(`Value at (${i},${j}) is: ${input}`);
-  }
-}
-console.log('Done!');
+//     if (!input) break outer;
+//     console.log(`Value at (${i},${j}) is: ${input}`);
+//   }
+// }
+// console.log('Done!');
+
+////questions 22 ////
+
+
