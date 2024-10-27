@@ -377,3 +377,13 @@
 ////questions 22 ////
 
 
+// No effect on numbers
+let x = 1;
+console.log(+x); 
+
+let y = -2;
+console.log(+y); 
+
+console.log(+true); 
+console.log(+''); 
+console.log(+'7'); 

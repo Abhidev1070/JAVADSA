@@ -1,3 +1,4 @@
+////questions 1 ////
 function* numberGenerator() {
     yield 1;
     yield 2;
