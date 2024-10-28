@@ -376,14 +376,25 @@
 
 ////questions 22 ////
 
+// let x = 1;
+// console.log(+x); 
 
-// No effect on numbers
-let x = 1;
-console.log(+x); 
+// let y = -2;
+// console.log(+y); 
 
-let y = -2;
-console.log(+y); 
+// console.log(+true); 
+// console.log(+''); 
+// console.log(+'7'); 
 
-console.log(+true); 
-console.log(+''); 
-console.log(+'7'); 
+////questions 22 ////
+
+let result = 0 / 0;
+let num = 7.14159;
+
+let roundedNum = num.toFixed(2);
+
+console.log(roundedNum);
+console.log(result);  
+console.log(typeof result); 
+console.log(Number.isNaN(result)); 
+
