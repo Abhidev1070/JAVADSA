@@ -388,13 +388,25 @@
 
 ////questions 22 ////
 
-let result = 0 / 0;
-let num = 7.14159;
+// let result = 0 / 0;
+// let num = 7.14159;
 
-let roundedNum = num.toFixed(2);
+// let roundedNum = num.toFixed(2);
 
-console.log(roundedNum);
-console.log(result);  
-console.log(typeof result); 
-console.log(Number.isNaN(result)); 
+// console.log(roundedNum);
+// console.log(result);  
+// console.log(typeof result); 
+// console.log(Number.isNaN(result)); 
 
+
+////questions 23 ////
+
+let obj = {};
+
+// Adding property
+obj.newProp = 'Hello';
+console.log(obj); 
+
+// Removing property
+delete obj.newProp;
+console.log(obj); 

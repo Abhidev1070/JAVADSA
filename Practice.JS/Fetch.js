@@ -8,19 +8,30 @@
 
 //// API 2 ////
 
-const fetchData = async () => {
-    const apiUrl = 'https://jsonplaceholder.typicode.com/posts';
+// const fetchData = async () => {
+//     const apiUrl = 'https://jsonplaceholder.typicode.com/posts';
   
-    try {
-      const response = await fetch(apiUrl);
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      const data = await response.json();
-      console.log(data); 
-    } catch (error) {
-      console.error('There was a problem with the fetch operation:', error);
-    }
-  };
-  fetchData();
+//     try {
+//       const response = await fetch(apiUrl);
+//       if (!response.ok) {
+//         throw new Error('Network response was not ok');
+//       }
+//       const data = await response.json();
+//       console.log(data); 
+//     } catch (error) {
+//       console.error('There was a problem with the fetch operation:', error);
+//     }
+//   };
+//   fetchData();
   
+  //// API 3 ////
+
+  // const fetchData = async () => {
+  //   const apiUrl = 'https://jsonplaceholder.typicode.com/posts';
+  
+  //   const response = await fetch(apiUrl);
+  //   const data = await response.json();
+  //   console.log(data); 
+  // };
+
+  // fetchData();
