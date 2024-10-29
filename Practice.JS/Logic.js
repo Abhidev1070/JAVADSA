@@ -401,12 +401,39 @@
 
 ////questions 23 ////
 
-let obj = {};
+// let obj = {};
 
-// Adding property
-obj.newProp = 'Hello';
-console.log(obj); 
+// // Adding property
+// obj.newProp = 'Hello';
+// console.log(obj); 
 
-// Removing property
-delete obj.newProp;
-console.log(obj); 
+// // Removing property
+// delete obj.newProp;
+// console.log(obj);
+
+
+////questions 24 ////
+// Array Like Object
+let fruits = {
+    0: 'Apple',
+    1: 'Pear',
+    2: 'Banana',
+    length: 3,
+  };
+  
+  // Array
+  let fruits2 = ['Apple', 'Pear', 'Banana'];
+  
+  console.log(fruits[0]); 
+  
+  console.log(fruits2[0]);
+  
+  console.log(fruits.length); 
+  
+  let arrFruits = Array.from(fruits); 
+  
+  console.log(arrFruits.length); 
+  
+  console.log(arrFruits.pop());
+  
+  console.log(arrFruits.length); 
