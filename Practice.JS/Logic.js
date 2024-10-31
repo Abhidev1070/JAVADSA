@@ -413,27 +413,35 @@
 
 
 ////questions 24 ////
+
 // Array Like Object
-let fruits = {
-    0: 'Apple',
-    1: 'Pear',
-    2: 'Banana',
-    length: 3,
-  };
+// let fruits = {
+//     0: 'Apple',
+//     1: 'Pear',
+//     2: 'Banana',
+//     length: 3,
+//   };
   
-  // Array
-  let fruits2 = ['Apple', 'Pear', 'Banana'];
+//   // Array
+//   let fruits2 = ['Apple', 'Pear', 'Banana'];
   
-  console.log(fruits[0]); 
+//   console.log(fruits[0]); 
   
-  console.log(fruits2[0]);
+//   console.log(fruits2[0]);
   
-  console.log(fruits.length); 
+//   console.log(fruits.length); 
   
-  let arrFruits = Array.from(fruits); 
+//   let arrFruits = Array.from(fruits); 
   
-  console.log(arrFruits.length); 
+//   console.log(arrFruits.length); 
   
-  console.log(arrFruits.pop());
+//   console.log(arrFruits.pop());
   
-  console.log(arrFruits.length); 
+//   console.log(arrFruits.length); 
+
+
+////questions 25 ////
+let Xmas95 = new Date('December 25, 1995 23:15:30');
+let month = Xmas95.getMonth();
+
+console.log(month);
