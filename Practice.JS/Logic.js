@@ -441,7 +441,34 @@
 
 
 ////questions 25 ////
-let Xmas95 = new Date('December 25, 1995 23:15:30');
-let month = Xmas95.getMonth();
+// let Xmas95 = new Date('December 25, 1995 23:15:30');
+// let month = Xmas95.getMonth();
 
-console.log(month);
+// console.log(month);
+
+
+////questions 26 ////
+
+// Creating a new Map
+let myMap = new Map();
+
+// Adding key-value pairs
+myMap.set('name', 'John');
+myMap.set('age', 30);
+
+// Accessing values
+console.log(myMap.get('name')); 
+console.log(myMap.get('age')); 
+
+// Checking if a key exists
+console.log(myMap.has('name')); 
+
+// Deleting a key-value pair
+myMap.delete('age');
+
+// Checking the size of the Map
+console.log(myMap.size); 
+
+// Clearing all key-value pairs
+myMap.clear();
+console.log(myMap.size); 
