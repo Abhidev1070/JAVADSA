@@ -450,25 +450,48 @@
 ////questions 26 ////
 
 // Creating a new Map
-let myMap = new Map();
+// let myMap = new Map();
 
-// Adding key-value pairs
-myMap.set('name', 'John');
-myMap.set('age', 30);
+// // Adding key-value pairs
+// myMap.set('name', 'John');
+// myMap.set('age', 30);
 
-// Accessing values
-console.log(myMap.get('name')); 
-console.log(myMap.get('age')); 
+// // Accessing values
+// console.log(myMap.get('name')); 
+// console.log(myMap.get('age')); 
 
-// Checking if a key exists
-console.log(myMap.has('name')); 
+// // Checking if a key exists
+// console.log(myMap.has('name')); 
 
-// Deleting a key-value pair
-myMap.delete('age');
+// // Deleting a key-value pair
+// myMap.delete('age');
 
-// Checking the size of the Map
-console.log(myMap.size); 
+// // Checking the size of the Map
+// console.log(myMap.size); 
 
-// Clearing all key-value pairs
-myMap.clear();
-console.log(myMap.size); 
+// // Clearing all key-value pairs
+// myMap.clear();
+// console.log(myMap.size); 
+
+
+
+////questions 27 ////
+
+for(let i=1; i<5; i++){
+    // console.log(i);
+    for(let j=1; j<5; j++){
+        // console.log(j);
+        for(let k=1; k<3; k++){
+            console.log(k);
+            for(let p=1; p<5; p++){
+                // console.log(p);
+                for(let r=1; r<5; r++){
+                    // console.log(r);
+        
+                }
+        
+            }
+        
+        }
+    }
+}
