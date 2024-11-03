@@ -477,21 +477,37 @@
 
 ////questions 27 ////
 
-for(let i=1; i<5; i++){
+// for(let i=1; i<5; i++){
     // console.log(i);
-    for(let j=1; j<5; j++){
-        // console.log(j);
-        for(let k=1; k<3; k++){
-            console.log(k);
-            for(let p=1; p<5; p++){
-                // console.log(p);
-                for(let r=1; r<5; r++){
-                    // console.log(r);
+//     for(let j=1; j<5; j++){
+//         // console.log(j);
+//         for(let k=1; k<3; k++){
+//             console.log(k);
+//             for(let p=1; p<5; p++){
+//                 // console.log(p);
+//                 for(let r=1; r<5; r++){
+//                     // console.log(r);
         
-                }
+//                 }
         
-            }
+//             }
         
-        }
-    }
+//         }
+//     }
+// }
+
+////questions 28 ////
+
+//// for of
+
+// let arr = ['a', 'b', 'c'];
+// for (let value of arr) {
+//   console.log(value);  
+// }
+
+//// for 
+
+let arr = ['a', 'b', 'c'];
+for (let i = 0; i < arr.length; i++) {
+  console.log(i, arr[i]);  
 }
