@@ -507,7 +507,34 @@
 
 //// for 
 
-let arr = ['a', 'b', 'c'];
-for (let i = 0; i < arr.length; i++) {
-  console.log(i, arr[i]);  
-}
+// let arr = ['a', 'b', 'c'];
+// for (let i = 0; i < arr.length; i++) {
+//   console.log(i, arr[i]);  
+// }
+
+////questions 29 ////
+
+// let obj = {
+//   a: 'object???',
+//   // Arrow Function
+//   foo: () => {
+//     console.log(this.a);
+//   }, 
+// };
+
+// let a = 'global!!!'; 
+
+// obj.foo(); 
+
+///////////////////////////////////
+
+let obj2 = {
+  b: 'object???',
+  // Property Function
+  foo: function () {
+    console.log(this.b);
+  }, 
+};
+
+let b = 'global!!!'; 
+obj2.foo();
