@@ -528,13 +528,66 @@
 
 ///////////////////////////////////
 
-let obj2 = {
-  b: 'object???',
-  // Property Function
-  foo: function () {
-    console.log(this.b);
-  }, 
-};
+// let obj2 = {
+//   b: 'object???',
+//   // Property Function
+//   foo: function () {
+//     console.log(this.b);
+//   }, 
+// };
 
-let b = 'global!!!'; 
-obj2.foo();
+// let b = 'global!!!'; 
+// obj2.foo();
+
+
+////questions 30 ////
+
+/// Dummy functions to simulate asynchronous behavior
+function getData(callback) {
+    setTimeout(() => {
+      console.log("getData");
+      callback("data from getData");
+    }, 1000);
+  }
+  
+  function getMoreData(a, callback) {
+    setTimeout(() => {
+      console.log("getMoreData:", a);
+      callback("data from getMoreData");
+    }, 1000);
+  }
+  
+  function getEvenMoreData(b, callback) {
+    setTimeout(() => {
+      console.log("getEvenMoreData:", b);
+      callback("data from getEvenMoreData");
+    }, 1000);
+  }
+  
+  function getYetMoreData(c, callback) {
+    setTimeout(() => {
+      console.log("getYetMoreData:", c);
+      callback("data from getYetMoreData");
+    }, 1000);
+  }
+  
+  function getFinalData(d, callback) {
+    setTimeout(() => {
+      console.log("getFinalData:", d);
+      callback("final data");
+    }, 1000);
+  }
+  
+  // The original code with callback hell
+  getData(function(a) {
+    getMoreData(a, function(b) {
+      getEvenMoreData(b, function(c) {
+        getYetMoreData(c, function(d) {
+          getFinalData(d, function(e) {
+            console.log("Final Output:", e);
+          });
+        });
+      });
+    });
+  });
+  
