@@ -543,51 +543,62 @@
 ////questions 30 ////
 
 /// Dummy functions to simulate asynchronous behavior
-function getData(callback) {
-    setTimeout(() => {
-      console.log("getData");
-      callback("data from getData");
-    }, 1000);
+// function getData(callback) {
+//     setTimeout(() => {
+//       console.log("getData");
+//       callback("data from getData");
+//     }, 1000);
+//   }
+  
+//   function getMoreData(a, callback) {
+//     setTimeout(() => {
+//       console.log("getMoreData:", a);
+//       callback("data from getMoreData");
+//     }, 1000);
+//   }
+  
+//   function getEvenMoreData(b, callback) {
+//     setTimeout(() => {
+//       console.log("getEvenMoreData:", b);
+//       callback("data from getEvenMoreData");
+//     }, 1000);
+//   }
+  
+//   function getYetMoreData(c, callback) {
+//     setTimeout(() => {
+//       console.log("getYetMoreData:", c);
+//       callback("data from getYetMoreData");
+//     }, 1000);
+//   }
+  
+//   function getFinalData(d, callback) {
+//     setTimeout(() => {
+//       console.log("getFinalData:", d);
+//       callback("final data");
+//     }, 1000);
+//   }
+  
+//   // The original code with callback hell
+//   getData(function(a) {
+//     getMoreData(a, function(b) {
+//       getEvenMoreData(b, function(c) {
+//         getYetMoreData(c, function(d) {
+//           getFinalData(d, function(e) {
+//             console.log("Final Output:", e);
+//           });
+//         });
+//       });
+//     });
+//   });
+
+////questions 31 ////
+
+let n=5;
+let String = "" ;
+for(let i=1; i<n; i++){
+  for(let j=0; j<n-i; j++){
+    String+= "*"
   }
-  
-  function getMoreData(a, callback) {
-    setTimeout(() => {
-      console.log("getMoreData:", a);
-      callback("data from getMoreData");
-    }, 1000);
-  }
-  
-  function getEvenMoreData(b, callback) {
-    setTimeout(() => {
-      console.log("getEvenMoreData:", b);
-      callback("data from getEvenMoreData");
-    }, 1000);
-  }
-  
-  function getYetMoreData(c, callback) {
-    setTimeout(() => {
-      console.log("getYetMoreData:", c);
-      callback("data from getYetMoreData");
-    }, 1000);
-  }
-  
-  function getFinalData(d, callback) {
-    setTimeout(() => {
-      console.log("getFinalData:", d);
-      callback("final data");
-    }, 1000);
-  }
-  
-  // The original code with callback hell
-  getData(function(a) {
-    getMoreData(a, function(b) {
-      getEvenMoreData(b, function(c) {
-        getYetMoreData(c, function(d) {
-          getFinalData(d, function(e) {
-            console.log("Final Output:", e);
-          });
-        });
-      });
-    });
-  });
-  
+  String += "\n"
+}
+console.log(String);
