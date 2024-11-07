@@ -593,12 +593,25 @@
 
 ////questions 31 ////
 
-let n=5;
-let String = "" ;
-for(let i=1; i<n; i++){
-  for(let j=0; j<n-i; j++){
-    String+= "*"
+// let n=5;
+// let String = "" ;
+// for(let i=1; i<n; i++){
+//   for(let j=0; j<n-i; j++){
+//     String+= "*"
+//   }
+//   String += "\n"
+// }
+// console.log(String);
+
+
+////questions 32 ////
+
+let n=4;
+let String = "";
+for(let i=0; i<=n; i++){
+  for(let j=0; j<=i; j++){
+    String += "*";
   }
-  String += "\n"
+  String += '\n';
 }
 console.log(String);
