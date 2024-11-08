@@ -606,12 +606,22 @@
 
 ////questions 32 ////
 
-let n=4;
-let String = "";
-for(let i=0; i<=n; i++){
-  for(let j=0; j<=i; j++){
-    String += "*";
-  }
-  String += '\n';
+// let n=4;
+// let String = "";
+// for(let i=0; i<=n; i++){
+//   for(let j=0; j<=i; j++){
+//     String += "*";
+//   }
+//   String += '\n';
+// }
+// console.log(String);
+
+////questions 33 ////
+
+let n= 100;
+let abhi =[];
+for(let i=1; i<=n; i++){
+  abhi.push(i)
 }
-console.log(String);
+console.log(abhi);
+
