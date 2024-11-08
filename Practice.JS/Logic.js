@@ -618,10 +618,26 @@
 
 ////questions 33 ////
 
-let n= 100;
-let abhi =[];
-for(let i=1; i<=n; i++){
-  abhi.push(i)
-}
-console.log(abhi);
+// let n= 100;
+// let abhi =[];
+// for(let i=1; i<=n; i++){
+//   abhi.push(i)
+// }
+// console.log(abhi);
 
+
+////questions 34 ////
+let n = 100; 
+let result = []; 
+
+for (let i = 1; i <= n; i += 10) {
+  let subArray = [];
+
+  for (let j = i; j < i + 10; j++) {
+    subArray.push(j); 
+  }
+  result.push(subArray); 
+  
+}
+
+console.log(result);
