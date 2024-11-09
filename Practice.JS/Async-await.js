@@ -8,3 +8,15 @@
   // console.log(z()); 
 
   
+  /// 2 ////
+
+  function calculateSum(a, b) {
+    return a + b;
+}
+
+async function calculateAndLogSum() {
+    const sum = await calculateSum(5, 10);
+    console.log(sum); 
+}
+
+calculateAndLogSum();

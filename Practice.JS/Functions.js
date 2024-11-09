@@ -31,13 +31,13 @@
 
 ////questions 3 ////
 
-function calculate(a, b) {
-  var c = a + b;
-  return c;
-}
+// function calculate(a, b) {
+//   var c = a + b;
+//   return c;
+// }
 
-var x = 5;
-var y = 3;
-var result = calculate(x, y);
-console.log(result); 
+// var x = 5;
+// var y = 3;
+// var result = calculate(x, y);
+// console.log(result); 
 
