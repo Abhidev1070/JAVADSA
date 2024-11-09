@@ -644,3 +644,11 @@
 // console.log(result);
 
 ////questions 35 ////
+
+let counterOne = 5;
+let a = ++counterOne; 
+console.log(a); 
+
+let counterTwo = 5;
+let b = counterTwo++; 
+console.log(b); 
