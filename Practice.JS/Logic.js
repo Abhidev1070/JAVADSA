@@ -645,10 +645,37 @@
 
 ////questions 35 ////
 
-let counterOne = 5;
-let a = ++counterOne; 
-console.log(a); 
+// let counterOne = 5;
+// let a = ++counterOne; 
+// console.log(a); 
 
-let counterTwo = 5;
-let b = counterTwo++; 
-console.log(b); 
+// let counterTwo = 5;
+// let b = counterTwo++; 
+// console.log(b); 
+
+////questions 36 ////
+
+let fruit = "apple";
+
+switch (fruit) {
+    case "banana":
+        console.log("I am a banana.");
+        break;
+    case "orange":
+        console.log("I am an orange.");
+        break;
+    default:
+        console.log("Unknown fruit.");  
+}
+
+let vegetable = "carrot";
+
+switch (vegetable) {
+    case "potato":
+        console.log("I am a potato.");
+        break;
+    case "tomato":
+        console.log("I am a tomato.");
+        break;
+    
+}
