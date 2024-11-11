@@ -655,27 +655,50 @@
 
 ////questions 36 ////
 
-let fruit = "apple";
+// let fruit = "apple";
 
-switch (fruit) {
-    case "banana":
-        console.log("I am a banana.");
-        break;
-    case "orange":
-        console.log("I am an orange.");
-        break;
-    default:
-        console.log("Unknown fruit.");  
-}
+// switch (fruit) {
+//     case "banana":
+//         console.log("I am a banana.");
+//         break;
+//     case "orange":
+//         console.log("I am an orange.");
+//         break;
+//     default:
+//         console.log("Unknown fruit.");  
+// }
 
-let vegetable = "carrot";
+// let vegetable = "carrot";
 
-switch (vegetable) {
-    case "potato":
-        console.log("I am a potato.");
-        break;
-    case "tomato":
-        console.log("I am a tomato.");
-        break;
+// switch (vegetable) {
+//     case "potato":
+//         console.log("I am a potato.");
+//         break;
+//     case "tomato":
+//         console.log("I am a tomato.");
+//         break;
     
+// }
+
+////questions 37 ////
+
+let car1 = {
+    brand: 'Tesla',
+    getBrand: function(){
+        console.log(this.brand);
+    }
+};
+
+let car2 = {
+    brand: 'Ford'
+};
+let getCar2Brand = car1.getBrand.bind(car2);
+
+getCar2Brand(); 
+function multiply(x, y) {
+    return x * y;
 }
+
+let double = multiply.bind(null, 2); 
+
+console.log(double(5)); 
