@@ -682,23 +682,45 @@
 
 ////questions 37 ////
 
-let car1 = {
-    brand: 'Tesla',
-    getBrand: function(){
-        console.log(this.brand);
-    }
+// let car1 = {
+//     brand: 'Tesla',
+//     getBrand: function(){
+//         console.log(this.brand);
+//     }
+// };
+
+// let car2 = {
+//     brand: 'Ford'
+// };
+// let getCar2Brand = car1.getBrand.bind(car2);
+
+// getCar2Brand(); 
+// function multiply(x, y) {
+//     return x * y;
+// }
+
+// let double = multiply.bind(null, 2); 
+
+// console.log(double(5)); 
+
+////questions 38 ////
+
+let fruits = ['Apple', 'Orange', 'Pear'];
+
+console.log(fruits.pop()); 
+
+console.log(fruits);
+
+
+var myFish = {
+  0: 'angel',
+  1: 'clown',
+  2: 'mandarin',
+  3: 'sturgeon',
+  length: 4,
 };
+var popped = Array.prototype.pop.call(myFish); 
 
-let car2 = {
-    brand: 'Ford'
-};
-let getCar2Brand = car1.getBrand.bind(car2);
+console.log(myFish); 
 
-getCar2Brand(); 
-function multiply(x, y) {
-    return x * y;
-}
-
-let double = multiply.bind(null, 2); 
-
-console.log(double(5)); 
+console.log(popped); // 'sturgeon'
