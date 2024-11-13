@@ -728,12 +728,12 @@
 
 ////questions 39 ////
 
-function mul(a, b) {
-  return a * b;
-}
+// function mul(a, b) {
+//   return a * b;
+// }
 
-let triple = mul.bind(null, 3);
+// let triple = mul.bind(null, 3);
 
-console.log(triple(3)); 
-console.log(triple(4)); 
-console.log(triple(5)); 
+// console.log(triple(3)); 
+// console.log(triple(4)); 
+// console.log(triple(5)); 
