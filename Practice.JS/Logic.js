@@ -705,22 +705,35 @@
 
 ////questions 38 ////
 
-let fruits = ['Apple', 'Orange', 'Pear'];
+// let fruits = ['Apple', 'Orange', 'Pear'];
 
-console.log(fruits.pop()); 
+// console.log(fruits.pop()); 
 
-console.log(fruits);
+// console.log(fruits);
 
 
-var myFish = {
-  0: 'angel',
-  1: 'clown',
-  2: 'mandarin',
-  3: 'sturgeon',
-  length: 4,
-};
-var popped = Array.prototype.pop.call(myFish); 
+// var myFish = {
+//   0: 'angel',
+//   1: 'clown',
+//   2: 'mandarin',
+//   3: 'sturgeon',
+//   length: 4,
+// };
+// var popped = Array.prototype.pop.call(myFish); 
 
-console.log(myFish); 
+// console.log(myFish); 
 
-console.log(popped); // 'sturgeon'
+// console.log(popped); // 'sturgeon'
+
+
+////questions 39 ////
+
+function mul(a, b) {
+  return a * b;
+}
+
+let triple = mul.bind(null, 3);
+
+console.log(triple(3)); 
+console.log(triple(4)); 
+console.log(triple(5)); 
