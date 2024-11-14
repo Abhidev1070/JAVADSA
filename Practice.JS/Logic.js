@@ -737,3 +737,42 @@
 // console.log(triple(3)); 
 // console.log(triple(4)); 
 // console.log(triple(5)); 
+
+////questions 39 ////
+
+
+// Higher Order Function
+function greaterThan(n) {
+    return (m) => m > n;
+  }
+  
+  let greaterThan10 = greaterThan(10);
+  console.log(greaterThan10(11));
+  // → true
+  
+  // We can have functions that change other functions.
+  function noisy(f) {
+    return (...args) => {
+      console.log('calling with', args);
+      let result = f(...args);
+      console.log('called with', args, ', returned', result);
+      return result;
+    };
+  }
+  
+  noisy(Math.min)(3, 2, 1);
+  // → calling with [3, 2, 1]
+  // → called with [3, 2, 1] , returned 1
+  
+  // We can even write functions that provide new types of control flow.
+  function unless(test, then) {
+    if (!test) then();
+  }
+  
+  repeat(3, (n) => {
+    unless(n % 2 == 1, () => {
+      console.log(n, 'is even');
+    });
+  });
+  // → 0 is even
+  // → 2 is even
