@@ -740,17 +740,30 @@
 
 ////questions 39 ////
 
-let buffer = new ArrayBuffer(16); 
+// let buffer = new ArrayBuffer(16); 
 
-let view = new Uint32Array(buffer); 
+// let view = new Uint32Array(buffer); 
 
-console.log(Uint32Array.BYTES_PER_ELEMENT); 
+// console.log(Uint32Array.BYTES_PER_ELEMENT); 
 
-console.log(view.length); 
-console.log(view.byteLength); 
+// console.log(view.length); 
+// console.log(view.byteLength); 
 
-view[0] = 123456;
+// view[0] = 123456;
 
-for (let num of view) {
-  console.log(num); 
-}
+// for (let num of view) {
+//   console.log(num); 
+// }
+
+////questions 40 ////
+
+let falsyValues = [false, 0, "", null, undefined, NaN];
+
+falsyValues.forEach(value => {
+    if (value) {
+        console.log(`${value} is truthy`);
+    } else {
+        console.log(`${value} is falsy`);
+    }
+});
+
