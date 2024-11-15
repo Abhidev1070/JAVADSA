@@ -757,13 +757,26 @@
 
 ////questions 40 ////
 
-let falsyValues = [false, 0, "", null, undefined, NaN];
+// let falsyValues = [false, 0, "", null, undefined, NaN];
 
-falsyValues.forEach(value => {
-    if (value) {
-        console.log(`${value} is truthy`);
-    } else {
-        console.log(`${value} is falsy`);
-    }
-});
+// falsyValues.forEach(value => {
+//     if (value) {
+//         console.log(`${value} is truthy`);
+//     } else {
+//         console.log(`${value} is falsy`);
+//     }
+// });
+
+////questions 41 ////
+
+function greeting(name) {
+    console.log(`Hello, ${name}`);
+}
+
+function processUserInput(callback) {
+    const name = "Abhishek";
+    callback(name);  
+}
+
+processUserInput(greeting);
 
