@@ -769,14 +769,28 @@
 
 ////questions 41 ////
 
-function greeting(name) {
-    console.log(`Hello, ${name}`);
-}
+// function greeting(name) {
+//     console.log(`Hello, ${name}`);
+// }
 
-function processUserInput(callback) {
-    const name = "Abhishek";
-    callback(name);  
-}
+// function processUserInput(callback) {
+//     const name = "Abhishek";
+//     callback(name);  
+// }
 
-processUserInput(greeting);
+// processUserInput(greeting);
+
+////questions 42 ////
+
+let user = {};
+
+Object.defineProperty(user, 'name', {
+  value: 'John',
+});
+
+let descriptor = Object.getOwnPropertyDescriptor(user, 'name');
+
+console.log(JSON.stringify(descriptor, null, 2));
+
+
 
