@@ -782,15 +782,26 @@
 
 ////questions 42 ////
 
-let user = {};
+// let user = {};
 
-Object.defineProperty(user, 'name', {
-  value: 'John',
-});
+// Object.defineProperty(user, 'name', {
+//   value: 'John',
+// });
 
-let descriptor = Object.getOwnPropertyDescriptor(user, 'name');
+// let descriptor = Object.getOwnPropertyDescriptor(user, 'name');
 
-console.log(JSON.stringify(descriptor, null, 2));
+// console.log(JSON.stringify(descriptor, null, 2));
+
+////questions 43 ////
+
+// let height = null;
+// let width = null;
+let height = 10;
+let width = 20;
 
 
+
+let area = (height ?? 100) * (width ?? 50);
+
+console.log(area); 
 
