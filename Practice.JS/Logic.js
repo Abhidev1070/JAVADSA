@@ -796,12 +796,33 @@
 
 // let height = null;
 // let width = null;
-let height = 10;
-let width = 20;
+// let height = 10;
+// let width = 20;
+
+// let area = (height ?? 100) * (width ?? 50);
+// console.log(area); 
+
+////questions 44 ////
 
 
+class Car {
+    constructor(model, year) {
+        this.model = model;
+        this.year = year;
+    }
+}
 
-let area = (height ?? 100) * (width ?? 50);
+class Bike {
+    constructor(model, year) {
+        this.model = model;
+        this.year = year;
+    }
+}
 
-console.log(area); 
+let myCar = new Car('Tesla Model 3', 2022);
+let myBike = new Bike('Yamaha MT-15', 2020);
 
+console.log(myCar instanceof Car); 
+console.log(myCar instanceof Bike); 
+console.log(myBike instanceof Car); 
+console.log(myBike instanceof Bike); 

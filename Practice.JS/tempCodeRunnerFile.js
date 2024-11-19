@@ -1,4 +1,3 @@
-let arr = ['a', 'b', 'c'];
-for (let i = 0; i < arr.length; i++) {
-  console.log(i, arr[i]);  
-}
+
+// console.log(myCar instanceof Car); 
+// console.log(myCar instanceof Bike);
