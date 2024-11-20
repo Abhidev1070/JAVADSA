@@ -805,24 +805,42 @@
 ////questions 44 ////
 
 
-class Car {
-    constructor(model, year) {
-        this.model = model;
-        this.year = year;
+// class Car {
+//     constructor(model, year) {
+//         this.model = model;
+//         this.year = year;
+//     }
+// }
+
+// class Bike {
+//     constructor(model, year) {
+//         this.model = model;
+//         this.year = year;
+//     }
+// }
+
+// let myCar = new Car('Tesla Model 3', 2022);
+// let myBike = new Bike('Yamaha MT-15', 2020);
+
+// console.log(myCar instanceof Car); 
+// console.log(myCar instanceof Bike); 
+// console.log(myBike instanceof Car); 
+// console.log(myBike instanceof Bike); 
+
+////questions 45 ////
+
+
+class MyClass {
+    static staticMethod() {
+      console.log('This is a static method.');
     }
-}
-
-class Bike {
-    constructor(model, year) {
-        this.model = model;
-        this.year = year;
+  
+    instanceMethod() {
+      console.log('This is an instance method.');
     }
-}
-
-let myCar = new Car('Tesla Model 3', 2022);
-let myBike = new Bike('Yamaha MT-15', 2020);
-
-console.log(myCar instanceof Car); 
-console.log(myCar instanceof Bike); 
-console.log(myBike instanceof Car); 
-console.log(myBike instanceof Bike); 
+  }
+  
+  MyClass.staticMethod(); // "This is a static method."
+  
+  let instance = new MyClass();
+  instance.instanceMethod(); // "This is an instance method."
