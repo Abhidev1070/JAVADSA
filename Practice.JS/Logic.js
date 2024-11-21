@@ -830,17 +830,30 @@
 ////questions 45 ////
 
 
-class MyClass {
-    static staticMethod() {
-      console.log('This is a static method.');
-    }
+// class MyClass {
+//     static staticMethod() {
+//       console.log('This is a static method.');
+//     }
   
-    instanceMethod() {
-      console.log('This is an instance method.');
-    }
-  }
+//     instanceMethod() {
+//       console.log('This is an instance method.');
+//     }
+//   }
   
-  MyClass.staticMethod(); // "This is a static method."
+//   MyClass.staticMethod(); // "This is a static method."
   
-  let instance = new MyClass();
-  instance.instanceMethod(); // "This is an instance method."
+//   let instance = new MyClass();
+//   instance.instanceMethod(); // "This is an instance method."
+
+////questions 46 ////
+
+function fetchData(callback) {
+  setTimeout(() => {
+    const data = 'Hello, world!';
+    callback(data);
+  }, 1000);
+}
+
+fetchData((response) => {
+  console.log(response); 
+});
