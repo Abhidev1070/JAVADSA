@@ -847,13 +847,28 @@
 
 ////questions 46 ////
 
-function fetchData(callback) {
-  setTimeout(() => {
-    const data = 'Hello, world!';
-    callback(data);
-  }, 1000);
+// function fetchData(callback) {
+//   setTimeout(() => {
+//     const data = 'Hello, world!';
+//     callback(data);
+//   }, 1000);
+// }
+
+// fetchData((response) => {
+//   console.log(response); 
+// });
+
+////questions 47////
+
+let i = 3;
+while (i) {
+  console.log(i);
+  i--; 
 }
 
-fetchData((response) => {
-  console.log(response); 
-});
+
+let items = ['apple', 'banana', 'orange'];
+while (items.length > 0) {
+  console.log(items.pop());
+}
+
