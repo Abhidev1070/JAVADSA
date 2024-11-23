@@ -860,15 +860,32 @@
 
 ////questions 47////
 
-let i = 3;
-while (i) {
-  console.log(i);
-  i--; 
+// let i = 3;
+// while (i) {
+//   console.log(i);
+//   i--; 
+// }
+
+
+// let items = ['apple', 'banana', 'orange'];
+// while (items.length > 0) {
+//   console.log(items.pop());
+// }
+
+////questions 48////
+
+
+var numbers = [1, 4, 44, 64, 55, 24, 32, 55, 19, 17, 74, 22, 23];
+var evenNumbers = [];
+var oddNumbers = [];
+
+for (var i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 != 1) {
+        evenNumbers.push(numbers[i]);
+    } else {
+        oddNumbers.push(numbers[i]);
+    }
 }
 
-
-let items = ['apple', 'banana', 'orange'];
-while (items.length > 0) {
-  console.log(items.pop());
-}
-
+console.log("The even numbers are: " + evenNumbers); 
+console.log("The odd numbers are: " + oddNumbers);
