@@ -875,17 +875,34 @@
 ////questions 48////
 
 
-var numbers = [1, 4, 44, 64, 55, 24, 32, 55, 19, 17, 74, 22, 23];
-var evenNumbers = [];
-var oddNumbers = [];
+// var numbers = [1, 4, 44, 64, 55, 24, 32, 55, 19, 17, 74, 22, 23];
+// var evenNumbers = [];
+// var oddNumbers = [];
 
-for (var i = 0; i < numbers.length; i++) {
-    if (numbers[i] % 2 != 1) {
-        evenNumbers.push(numbers[i]);
-    } else {
-        oddNumbers.push(numbers[i]);
-    }
+// for (var i = 0; i < numbers.length; i++) {
+//     if (numbers[i] % 2 != 1) {
+//         evenNumbers.push(numbers[i]);
+//     } else {
+//         oddNumbers.push(numbers[i]);
+//     }
+// }
+
+// console.log("The even numbers are: " + evenNumbers); 
+// console.log("The odd numbers are: " + oddNumbers);
+
+////questions 49////
+
+
+let num1 = 3; 
+let num2 = -7; 
+let num3 = 2; 
+
+let product = num1 * num2 * num3;
+
+if (product > 0) {
+    console.log("The sign is +");
+} else if (product < 0) {
+    console.log("The sign is -");
+} else {
+    console.log("The product is zero");
 }
-
-console.log("The even numbers are: " + evenNumbers); 
-console.log("The odd numbers are: " + oddNumbers);
