@@ -893,16 +893,35 @@
 ////questions 49////
 
 
-let num1 = 3; 
-let num2 = -7; 
-let num3 = 2; 
+// let num1 = 3; 
+// let num2 = -7; 
+// let num3 = 2; 
 
-let product = num1 * num2 * num3;
+// let product = num1 * num2 * num3;
 
-if (product > 0) {
-    console.log("The sign is +");
-} else if (product < 0) {
-    console.log("The sign is -");
-} else {
-    console.log("The product is zero");
-}
+// if (product > 0) {
+//     console.log("The sign is +");
+// } else if (product < 0) {
+//     console.log("The sign is -");
+// } else {
+//     console.log("The product is zero");
+// }
+
+
+////questions 50////
+
+// Using an Arrow Function
+let myFunction = (item, index) => {
+    console.log(index + ':' + item);
+  };
+  
+  const fruits = ['apple', 'orange', 'cherry'];
+  fruits.forEach(myFunction);
+  
+  // Using an Function Declaration
+  const fruits2 = ['apple', 'orange', 'cherry'];
+  fruits2.forEach(myFunction);
+  
+  function myFunction(item, index) {
+    console.log(index + ':' + item);
+  }
