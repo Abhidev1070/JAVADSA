@@ -911,17 +911,38 @@
 ////questions 50////
 
 // Using an Arrow Function
-let myFunction = (item, index) => {
-    console.log(index + ':' + item);
-  };
+// let myFunction = (item, index) => {
+//     console.log(index + ':' + item);
+//   };
   
-  const fruits = ['apple', 'orange', 'cherry'];
-  fruits.forEach(myFunction);
+//   const fruits = ['apple', 'orange', 'cherry'];
+//   fruits.forEach(myFunction);
   
-  // Using an Function Declaration
-  const fruits2 = ['apple', 'orange', 'cherry'];
-  fruits2.forEach(myFunction);
+//   // Using an Function Declaration
+//   const fruits2 = ['apple', 'orange', 'cherry'];
+//   fruits2.forEach(myFunction);
   
-  function myFunction(item, index) {
-    console.log(index + ':' + item);
-  }
+//   function myFunction(item, index) {
+//     console.log(index + ':' + item);
+//   }
+
+////questions 51////
+
+
+const array1 = [5, 12, 8, 130, 44];
+
+const found = array1.find((element) => element > 10);
+
+console.log(found);
+
+
+
+let users = [
+  { id: 1, name: 'John' },
+  { id: 2, name: 'Pete' },
+  { id: 3, name: 'Mary' },
+];
+
+let user = users.find((item) => item.id == 1);
+
+console.log(user.name); 
