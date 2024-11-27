@@ -110,7 +110,7 @@
 
 // const reversePyramid = (input) => {
 //    let patternCapturer = "";
- 
+
 //    for (let i = 0; i < input; i++) {
 //      for (let j = 0; j < i; j++) {
 //        patternCapturer += " ";
@@ -122,7 +122,7 @@
 //    }
 //    console.log(patternCapturer);
 //  };
- 
+
 //  reversePyramid(5);
 
 ////questions 8 ////
@@ -294,7 +294,7 @@
 //       for(var j = 1; j <= 4; j++)
 //         {
 //             statement2++; 
-            
+
 //         }
 //     }
 //     console.log(statement1)
@@ -421,22 +421,22 @@
 //     2: 'Banana',
 //     length: 3,
 //   };
-  
+
 //   // Array
 //   let fruits2 = ['Apple', 'Pear', 'Banana'];
-  
+
 //   console.log(fruits[0]); 
-  
+
 //   console.log(fruits2[0]);
-  
+
 //   console.log(fruits.length); 
-  
+
 //   let arrFruits = Array.from(fruits); 
-  
+
 //   console.log(arrFruits.length); 
-  
+
 //   console.log(arrFruits.pop());
-  
+
 //   console.log(arrFruits.length); 
 
 
@@ -478,7 +478,7 @@
 ////questions 27 ////
 
 // for(let i=1; i<5; i++){
-    // console.log(i);
+// console.log(i);
 //     for(let j=1; j<5; j++){
 //         // console.log(j);
 //         for(let k=1; k<3; k++){
@@ -487,11 +487,11 @@
 //                 // console.log(p);
 //                 for(let r=1; r<5; r++){
 //                     // console.log(r);
-        
+
 //                 }
-        
+
 //             }
-        
+
 //         }
 //     }
 // }
@@ -549,35 +549,35 @@
 //       callback("data from getData");
 //     }, 1000);
 //   }
-  
+
 //   function getMoreData(a, callback) {
 //     setTimeout(() => {
 //       console.log("getMoreData:", a);
 //       callback("data from getMoreData");
 //     }, 1000);
 //   }
-  
+
 //   function getEvenMoreData(b, callback) {
 //     setTimeout(() => {
 //       console.log("getEvenMoreData:", b);
 //       callback("data from getEvenMoreData");
 //     }, 1000);
 //   }
-  
+
 //   function getYetMoreData(c, callback) {
 //     setTimeout(() => {
 //       console.log("getYetMoreData:", c);
 //       callback("data from getYetMoreData");
 //     }, 1000);
 //   }
-  
+
 //   function getFinalData(d, callback) {
 //     setTimeout(() => {
 //       console.log("getFinalData:", d);
 //       callback("final data");
 //     }, 1000);
 //   }
-  
+
 //   // The original code with callback hell
 //   getData(function(a) {
 //     getMoreData(a, function(b) {
@@ -638,7 +638,7 @@
 //     subArray.push(j); 
 //   }
 //   result.push(subArray); 
-  
+
 // }
 
 // console.log(result);
@@ -677,7 +677,7 @@
 //     case "tomato":
 //         console.log("I am a tomato.");
 //         break;
-    
+
 // }
 
 ////questions 37 ////
@@ -834,14 +834,14 @@
 //     static staticMethod() {
 //       console.log('This is a static method.');
 //     }
-  
+
 //     instanceMethod() {
 //       console.log('This is an instance method.');
 //     }
 //   }
-  
+
 //   MyClass.staticMethod(); // "This is a static method."
-  
+
 //   let instance = new MyClass();
 //   instance.instanceMethod(); // "This is an instance method."
 
@@ -914,14 +914,14 @@
 // let myFunction = (item, index) => {
 //     console.log(index + ':' + item);
 //   };
-  
+
 //   const fruits = ['apple', 'orange', 'cherry'];
 //   fruits.forEach(myFunction);
-  
+
 //   // Using an Function Declaration
 //   const fruits2 = ['apple', 'orange', 'cherry'];
 //   fruits2.forEach(myFunction);
-  
+
 //   function myFunction(item, index) {
 //     console.log(index + ':' + item);
 //   }
@@ -929,20 +929,34 @@
 ////questions 51////
 
 
-const array1 = [5, 12, 8, 130, 44];
+// const array1 = [5, 12, 8, 130, 44];
 
-const found = array1.find((element) => element > 10);
+// const found = array1.find((element) => element > 10);
 
-console.log(found);
+// console.log(found);
 
 
 
-let users = [
-  { id: 1, name: 'John' },
-  { id: 2, name: 'Pete' },
-  { id: 3, name: 'Mary' },
-];
+// let users = [
+//   { id: 1, name: 'John' },
+//   { id: 2, name: 'Pete' },
+//   { id: 3, name: 'Mary' },
+// ];
 
-let user = users.find((item) => item.id == 1);
+// let user = users.find((item) => item.id == 1);
 
-console.log(user.name); 
+// console.log(user.name); 
+
+
+////questions 52////
+
+let id = Symbol('id');
+let user = {
+  name: 'John',
+  age: 30,
+  [id]: 123,
+};
+
+for (let key in user) console.log(key);
+
+console.log('Direct: ' + user[id]);
