@@ -950,13 +950,26 @@
 
 ////questions 52////
 
-let id = Symbol('id');
-let user = {
-  name: 'John',
-  age: 30,
-  [id]: 123,
-};
+// let id = Symbol('id');
+// let user = {
+//   name: 'John',
+//   age: 30,
+//   [id]: 123,
+// };
 
-for (let key in user) console.log(key);
+// for (let key in user) console.log(key);
 
-console.log('Direct: ' + user[id]);
+// console.log('Direct: ' + user[id]);
+
+////questions 53////
+
+let a = 5;
+let string = "";
+
+for (let i=1;i<=a;i++){
+  string="";
+  for(let j=1;j<=i;j++){
+    string+="*";
+  }
+  console.log(string)
+}
