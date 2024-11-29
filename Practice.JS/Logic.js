@@ -963,13 +963,29 @@
 
 ////questions 53////
 
-let a = 5;
-let string = "";
+// let a = 5;
+// let string = "";
 
-for (let i=1;i<=a;i++){
-  string="";
-  for(let j=1;j<=i;j++){
-    string+="*";
-  }
-  console.log(string)
-}
+// for (let i=1;i<=a;i++){
+//   string="";
+//   for(let j=1;j<=i;j++){
+//     string+="*";
+//   }
+//   console.log(string)
+// }
+
+////questions 54////
+
+
+'use strict';
+
+let user = {
+  name: 'John',
+};
+
+Object.defineProperty(user, 'name', {
+  writable: false,
+  configurable: false,
+});
+
+console.log(user.name); 

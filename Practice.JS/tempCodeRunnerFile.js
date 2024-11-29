@@ -1,3 +1,3 @@
 
-// console.log(myCar instanceof Car); 
-// console.log(myCar instanceof Bike);
+// delete user.name;
+// Object.defineProperty(user, 'name', { value: 'Pete' });

@@ -46,27 +46,38 @@
 
 // Higher Order Function
 
-function greaterThan(n) {
-    return (m) => m > n;
-  }
+// function greaterThan(n) {
+//     return (m) => m > n;
+//   }
   
-  let greaterThan10 = greaterThan(10);
-  console.log(greaterThan10(11));
+//   let greaterThan10 = greaterThan(10);
+//   console.log(greaterThan10(11));
  
-  function noisy(f) {
-    return (...args) => {
-      console.log('calling with', args);
-      let result = f(...args);
-      console.log('called with', args, ', returned', result);
-      return result;
-    };
-  }
+//   function noisy(f) {
+//     return (...args) => {
+//       console.log('calling with', args);
+//       let result = f(...args);
+//       console.log('called with', args, ', returned', result);
+//       return result;
+//     };
+//   }
   
-  noisy(Math.min)(3, 2, 1);
+  // noisy(Math.min)(3, 2, 1);
   
 
 ////questions 5 ////
 
-  
+
+
+
+
+
+
+
+
+
+
+
+
  
  
