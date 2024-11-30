@@ -977,15 +977,37 @@
 ////questions 54////
 
 
-'use strict';
+// 'use strict';
 
-let user = {
-  name: 'John',
-};
+// let user = {
+//   name: 'John',
+// };
 
-Object.defineProperty(user, 'name', {
-  writable: false,
-  configurable: false,
-});
+// Object.defineProperty(user, 'name', {
+//   writable: false,
+//   configurable: false,
+// });
 
-console.log(user.name); 
+// console.log(user.name); 
+
+////questions 55////
+
+
+let set = new Set();
+
+let john = { name: 'John' };
+let pete = { name: 'Pete' };
+let mary = { name: 'Mary' };
+
+
+set.add(john);
+set.add(pete);
+set.add(mary);
+set.add(john);
+set.add(mary);
+
+console.log(set.size); 
+
+for (let user of set) {
+  console.log(user.name); 
+}
