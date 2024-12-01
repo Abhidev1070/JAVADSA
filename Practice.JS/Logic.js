@@ -993,21 +993,45 @@
 ////questions 55////
 
 
-let set = new Set();
+// let set = new Set();
 
-let john = { name: 'John' };
-let pete = { name: 'Pete' };
-let mary = { name: 'Mary' };
+// let john = { name: 'John' };
+// let pete = { name: 'Pete' };
+// let mary = { name: 'Mary' };
 
 
-set.add(john);
-set.add(pete);
-set.add(mary);
-set.add(john);
-set.add(mary);
+// set.add(john);
+// set.add(pete);
+// set.add(mary);
+// set.add(john);
+// set.add(mary);
 
-console.log(set.size); 
+// console.log(set.size); 
 
-for (let user of set) {
-  console.log(user.name); 
+// for (let user of set) {
+//   console.log(user.name); 
+// }
+
+////questions 56////
+
+
+let Duck = function() {};
+Duck.prototype.quack = function() {
+    console.log('Quack!');
+};
+
+let NotADuck = function() {};
+
+let duck = new Duck();
+let notADuck = new NotADuck();
+
+function makeItQuack(possiblyADuck) {
+    if (typeof possiblyADuck.quack === 'function') {
+        possiblyADuck.quack();
+    } else {
+        console.log('This is not a duck!');
+    }
 }
+
+makeItQuack(duck); 
+makeItQuack(notADuck); 
