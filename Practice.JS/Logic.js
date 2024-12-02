@@ -1015,23 +1015,49 @@
 ////questions 56////
 
 
-let Duck = function() {};
-Duck.prototype.quack = function() {
-    console.log('Quack!');
+// let Duck = function() {};
+// Duck.prototype.quack = function() {
+//     console.log('Quack!');
+// };
+
+// let NotADuck = function() {};
+
+// let duck = new Duck();
+// let notADuck = new NotADuck();
+
+// function makeItQuack(possiblyADuck) {
+//     if (typeof possiblyADuck.quack === 'function') {
+//         possiblyADuck.quack();
+//     } else {
+//         console.log('This is not a duck!');
+//     }
+// }
+
+// makeItQuack(duck); 
+// makeItQuack(notADuck); 
+
+
+////questions 57////
+
+let mixin = {
+    sayHi() {
+        console.log(`Hello ${this.name}`);
+    },
+    sayBye() {
+        console.log(`Bye ${this.name}`);
+    },
 };
 
-let NotADuck = function() {};
-
-let duck = new Duck();
-let notADuck = new NotADuck();
-
-function makeItQuack(possiblyADuck) {
-    if (typeof possiblyADuck.quack === 'function') {
-        possiblyADuck.quack();
-    } else {
-        console.log('This is not a duck!');
+class User {
+    constructor(name) {
+        this.name = name;
     }
 }
 
-makeItQuack(duck); 
-makeItQuack(notADuck); 
+// copy the methods
+Object.assign(User.prototype, mixin);
+
+// now User can say hi and bye
+let user = new User("John");
+user.sayHi(); // Hello John
+user.sayBye(); // Bye John
