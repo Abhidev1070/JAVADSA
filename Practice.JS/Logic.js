@@ -1039,25 +1039,46 @@
 
 ////questions 57////
 
-let mixin = {
-    sayHi() {
-        console.log(`Hello ${this.name}`);
-    },
-    sayBye() {
-        console.log(`Bye ${this.name}`);
-    },
-};
+// let mixin = {
+//     sayHi() {
+//         console.log(`Hello ${this.name}`);
+//     },
+//     sayBye() {
+//         console.log(`Bye ${this.name}`);
+//     },
+// };
 
-class User {
-    constructor(name) {
-        this.name = name;
-    }
-}
+// class User {
+//     constructor(name) {
+//         this.name = name;
+//     }
+// }
 
-// copy the methods
-Object.assign(User.prototype, mixin);
+// // copy the methods
+// Object.assign(User.prototype, mixin);
 
-// now User can say hi and bye
-let user = new User("John");
-user.sayHi(); // Hello John
-user.sayBye(); // Bye John
+// // now User can say hi and bye
+// let user = new User("John");
+// user.sayHi(); // Hello John
+// user.sayBye(); // Bye John
+
+////questions 58////
+
+
+function Person(firstName, lastName) {
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.getFullName = function () {
+      return `${this.firstName} ${this.lastName}`;
+    };
+  }
+  
+  function Man(firstName, lastName) {
+    Person.call(this, firstName, lastName); // calling Person firstName, lastName
+    this.gender = 'Man';
+  }
+  
+  const eric = new Man('Eric', 'Wilson');
+  console.log(eric.firstName + ' ' + eric.lastName); // returns Eric + Wilson
+  
+  console.log(eric.getFullName()); // method call returns Full Name: Eric Wilson
