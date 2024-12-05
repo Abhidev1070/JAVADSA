@@ -1087,28 +1087,47 @@
 
 
 // Array of students with their names and grades
-var students = [['David', 80], ['Vinoth', 77], ['Divya', 88], ['Ishitha', 95], ['Thomas', 68]];
+// var students = [['David', 80], ['Vinoth', 77], ['Divya', 88], ['Ishitha', 95], ['Thomas', 68]];
 
-var Avgmarks = 0;
+// var Avgmarks = 0;
 
-// Loop through the students array to calculate the total marks
-for (var i = 0; i < students.length; i++) {
-    Avgmarks += students[i][1];
-    var avg = (Avgmarks / students.length);
+// // Loop through the students array to calculate the total marks
+// for (var i = 0; i < students.length; i++) {
+//     Avgmarks += students[i][1];
+//     var avg = (Avgmarks / students.length);
+// }
+
+// // Calculate and log the average grade
+// console.log("Average grade: " + (Avgmarks) / students.length);
+
+// // Determine the grade based on the average
+// if (avg < 60) {
+//     console.log("Grade: F");
+// } else if (avg < 70) {
+//     console.log("Grade: D");
+// } else if (avg < 80) {
+//     console.log("Grade: C");
+// } else if (avg < 90) {
+//     console.log("Grade: B");
+// } else if (avg <= 100) {
+//     console.log("Grade: A");
+// } 
+
+////questions 60//// 
+// Step 1: Initialize variables
+let sum = 0; 
+let i = 1; 
+
+const N = parseInt(console.log("Enter the value of N: ",10), 10);
+
+if (!isNaN(N) && N > 0) {
+    
+    while (i <= N) {
+        sum += i; 
+        i++; 
+    }
+    console.log("The sum of the first " + N + " natural numbers is: " + sum);
+} else {
+    console.log("Please enter a valid positive number for N.");
 }
 
-// Calculate and log the average grade
-console.log("Average grade: " + (Avgmarks) / students.length);
-
-// Determine the grade based on the average
-if (avg < 60) {
-    console.log("Grade: F");
-} else if (avg < 70) {
-    console.log("Grade: D");
-} else if (avg < 80) {
-    console.log("Grade: C");
-} else if (avg < 90) {
-    console.log("Grade: B");
-} else if (avg <= 100) {
-    console.log("Grade: A");
-} 
