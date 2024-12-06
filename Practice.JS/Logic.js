@@ -1115,19 +1115,31 @@
 
 ////questions 60//// 
 // Step 1: Initialize variables
-let sum = 0; 
-let i = 1; 
+// let sum = 0; 
+// let i = 1; 
 
-const N = parseInt(console.log("Enter the value of N: ",10), 10);
+// const N = parseInt(console.log("Enter the value of N: ",10), 10);
 
-if (!isNaN(N) && N > 0) {
+// if (!isNaN(N) && N > 0) {
     
-    while (i <= N) {
-        sum += i; 
-        i++; 
-    }
-    console.log("The sum of the first " + N + " natural numbers is: " + sum);
-} else {
-    console.log("Please enter a valid positive number for N.");
-}
+//     while (i <= N) {
+//         sum += i; 
+//         i++; 
+//     }
+//     console.log("The sum of the first " + N + " natural numbers is: " + sum);
+// } else {
+//     console.log("Please enter a valid positive number for N.");
+// }
 
+////questions 61//// 
+
+
+const object1 = {};
+
+console.log(Object.isExtensible(object1));
+// expected output: true
+
+Object.preventExtensions(object1);
+
+console.log(Object.isExtensible(object1));
+// expected output: false
