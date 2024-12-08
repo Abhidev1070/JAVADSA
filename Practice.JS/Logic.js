@@ -1147,20 +1147,42 @@
 ////questions 62//// 
 
 
-let user = {
-    get name() {
-      return this._name;
-    },
+// let user = {
+//     get name() {
+//       return this._name;
+//     },
   
-    set name(value) {
-      if (value.length < 4) {
-        console.log('Name is too short, need at least 4 characters');
-        return;
-      }
-      this._name = value;
+//     set name(value) {
+//       if (value.length < 4) {
+//         console.log('Name is too short, need at least 4 characters');
+//         return;
+//       }
+//       this._name = value;
+//     },
+//   };
+  
+//   user.name = 'Pete';
+//   console.log(user.name); // Pete
+//   user.name = ''; // Name is too short...
+
+////questions 63//// 
+
+// Named Accessor Properties
+let obj = {
+    get prop() {
+      return this._prop;
+    },
+    set prop(value) {
+      console.log('Setter: ' + value);
+      this._prop = value;
     },
   };
   
-  user.name = 'Pete';
-  console.log(user.name); // Pete
-  user.name = ''; // Name is too short...
+  obj.prop = '123';
+  
+  // Named Data Properties
+  let obj = {
+    prop: 123,
+  };
+  
+  console.log(obj.prop); // 123
