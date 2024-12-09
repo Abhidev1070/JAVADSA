@@ -1168,21 +1168,53 @@
 ////questions 63//// 
 
 // Named Accessor Properties
-let obj = {
-    get prop() {
-      return this._prop;
-    },
-    set prop(value) {
-      console.log('Setter: ' + value);
-      this._prop = value;
-    },
-  };
+// let obj = {
+//     get prop() {
+//       return this._prop;
+//     },
+//     set prop(value) {
+//       console.log('Setter: ' + value);
+//       this._prop = value;
+//     },
+//   };
   
-  obj.prop = '123';
+//   obj.prop = '123';
   
-  // Named Data Properties
-  let obj = {
-    prop: 123,
-  };
+//   // Named Data Properties
+//   let obj = {
+//     prop: 123,
+//   };
   
-  console.log(obj.prop); // 123
+//   console.log(obj.prop); // 123
+
+
+////questions 64//// 
+
+function isSpecial(nums, queries) {
+    function isSpecialSubarray(from, to) {
+        for (let i = from; i < to; i++) {
+            // Check if adjacent elements have the same parity
+            if (nums[i] % 2 === nums[i + 1] % 2) {
+                return false; // Not special if adjacent elements have the same parity
+            }
+        }
+        return true; 
+    }
+
+    // Result array to store the answers
+    let answer = [];
+
+    // Process each query
+    for (let i = 0; i < queries.length; i++) {
+        let [from, to] = queries[i];
+        // Check if the subarray nums[from..to] is special and push the result
+        answer.push(isSpecialSubarray(from, to));
+    }
+
+    return answer;
+}
+
+// Example usage:
+const nums = [3, 5, 2, 6, 7];
+const queries = [[0, 2], [1, 3], [2, 4]];
+console.log(isSpecial(nums, queries)); 
