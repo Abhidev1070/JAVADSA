@@ -1190,31 +1190,55 @@
 
 ////questions 64//// 
 
-function isSpecial(nums, queries) {
-    function isSpecialSubarray(from, to) {
-        for (let i = from; i < to; i++) {
-            // Check if adjacent elements have the same parity
-            if (nums[i] % 2 === nums[i + 1] % 2) {
-                return false; // Not special if adjacent elements have the same parity
-            }
-        }
-        return true; 
-    }
+// function isSpecial(nums, queries) {
+//     function isSpecialSubarray(from, to) {
+//         for (let i = from; i < to; i++) {
+//             // Check if adjacent elements have the same parity
+//             if (nums[i] % 2 === nums[i + 1] % 2) {
+//                 return false; // Not special if adjacent elements have the same parity
+//             }
+//         }
+//         return true; 
+//     }
 
-    // Result array to store the answers
-    let answer = [];
+//     // Result array to store the answers
+//     let answer = [];
 
-    // Process each query
-    for (let i = 0; i < queries.length; i++) {
-        let [from, to] = queries[i];
-        // Check if the subarray nums[from..to] is special and push the result
-        answer.push(isSpecialSubarray(from, to));
-    }
+//     // Process each query
+//     for (let i = 0; i < queries.length; i++) {
+//         let [from, to] = queries[i];
+//         // Check if the subarray nums[from..to] is special and push the result
+//         answer.push(isSpecialSubarray(from, to));
+//     }
 
-    return answer;
+//     return answer;
+// }
+
+// // Example usage:
+// const nums = [3, 5, 2, 6, 7];
+// const queries = [[0, 2], [1, 3], [2, 4]];
+// console.log(isSpecial(nums, queries));
+
+
+////questions 64//// 
+
+
+function lengthOfLastWord(s) {
+    // Step 1: Trim the string to remove leading and trailing spaces
+    s = s.trim();
+    
+    // Step 2: Split the string by spaces into an array of words
+    const words = s.split(' ');
+    
+    // Step 3: Get the last word
+    const lastWord = words[words.length - 1];
+    
+    // Step 4: Return the length of the last word
+    return lastWord.length;
 }
 
-// Example usage:
-const nums = [3, 5, 2, 6, 7];
-const queries = [[0, 2], [1, 3], [2, 4]];
-console.log(isSpecial(nums, queries)); 
+// Test the function with the provided examples
+console.log(lengthOfLastWord("Hello World"));  
+console.log(lengthOfLastWord("   fly me   to   the moon  ")); 
+console.log(lengthOfLastWord("luffy is still joyboy")); 
+
