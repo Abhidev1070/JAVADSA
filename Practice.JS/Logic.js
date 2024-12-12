@@ -1246,38 +1246,87 @@
 ////questions 65//// 
 
 
-function romanToInt(s) {
-    const romanMap = {
-        'I': 1,
-        'V': 5,
-        'X': 10,
-        'L': 50,
-        'C': 100,
-        'D': 500,
-        'M': 1000
-    };
+// function romanToInt(s) {
+//     const romanMap = {
+//         'I': 1,
+//         'V': 5,
+//         'X': 10,
+//         'L': 50,
+//         'C': 100,
+//         'D': 500,
+//         'M': 1000
+//     };
 
-    let total = 0;
-    for (let i = 0; i < s.length; i++) {
-        const current = romanMap[s[i]];
-        const next = romanMap[s[i + 1]];
+//     let total = 0;
+//     for (let i = 0; i < s.length; i++) {
+//         const current = romanMap[s[i]];
+//         const next = romanMap[s[i + 1]];
 
-        // If the current value is less than the next value, subtract the current value.
-        if (current < next) {
-            total -= current;
+//         // If the current value is less than the next value, subtract the current value.
+//         if (current < next) {
+//             total -= current;
+//         } else {
+//             total += current;
+//         }
+//     }
+
+//     return total;
+// }
+
+// // Example usage:
+// console.log(romanToInt("III")); // Output: 3
+// console.log(romanToInt("IV"));  // Output: 4
+// console.log(romanToInt("IX"));  // Output: 9
+// console.log(romanToInt("LVIII")); // Output: 58
+// console.log(romanToInt("MCMXCIV")); // Output: 1994
+
+////questions 66//// 
+
+function findMedianSortedArrays(nums1, nums2) {
+    // Ensure nums1 is the smaller array
+    if (nums1.length > nums2.length) {
+        [nums1, nums2] = [nums2, nums1];
+    }
+    
+    let m = nums1.length;
+    let n = nums2.length;
+    let low = 0, high = m;
+
+    while (low <= high) {
+        let partitionX = Math.floor((low + high) / 2);
+        let partitionY = Math.floor((m + n + 1) / 2) - partitionX;
+        
+        let maxX = (partitionX === 0) ? -Infinity : nums1[partitionX - 1];
+        let minX = (partitionX === m) ? Infinity : nums1[partitionX];
+        
+        let maxY = (partitionY === 0) ? -Infinity : nums2[partitionY - 1];
+        let minY = (partitionY === n) ? Infinity : nums2[partitionY];
+
+        if (maxX <= minY && maxY <= minX) {
+            if ((m + n) % 2 === 0) {
+                return (Math.max(maxX, maxY) + Math.min(minX, minY)) / 2;
+            } else {
+                return Math.max(maxX, maxY);
+            }
+        } else if (maxX > minY) {
+            high = partitionX - 1;  // Move left
         } else {
-            total += current;
+            low = partitionX + 1;   // Move right
         }
     }
-
-    return total;
+    
+    throw new Error("Input arrays are not sorted.");
 }
 
-// Example usage:
-console.log(romanToInt("III")); // Output: 3
-console.log(romanToInt("IV"));  // Output: 4
-console.log(romanToInt("IX"));  // Output: 9
-console.log(romanToInt("LVIII")); // Output: 58
-console.log(romanToInt("MCMXCIV")); // Output: 1994
+// Testing the function with the examples
+const test_case_1 = [1, 3], test_case_2 = [2];
+const result_1 = findMedianSortedArrays(test_case_1, test_case_2);
+console.log(result_1);  // Output: 2.0
+
+const test_case_3 = [1, 2], test_case_4 = [3, 4];
+const result_2 = findMedianSortedArrays(test_case_3, test_case_4);
+console.log(result_2);  // Output: 2.5
+
+
 
 
