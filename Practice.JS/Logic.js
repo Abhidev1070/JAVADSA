@@ -1282,51 +1282,77 @@
 
 ////questions 66//// 
 
-function findMedianSortedArrays(nums1, nums2) {
-    // Ensure nums1 is the smaller array
-    if (nums1.length > nums2.length) {
-        [nums1, nums2] = [nums2, nums1];
-    }
+// function findMedianSortedArrays(nums1, nums2) {
+//     // Ensure nums1 is the smaller array
+//     if (nums1.length > nums2.length) {
+//         [nums1, nums2] = [nums2, nums1];
+//     }
     
-    let m = nums1.length;
-    let n = nums2.length;
-    let low = 0, high = m;
+//     let m = nums1.length;
+//     let n = nums2.length;
+//     let low = 0, high = m;
 
-    while (low <= high) {
-        let partitionX = Math.floor((low + high) / 2);
-        let partitionY = Math.floor((m + n + 1) / 2) - partitionX;
+//     while (low <= high) {
+//         let partitionX = Math.floor((low + high) / 2);
+//         let partitionY = Math.floor((m + n + 1) / 2) - partitionX;
         
-        let maxX = (partitionX === 0) ? -Infinity : nums1[partitionX - 1];
-        let minX = (partitionX === m) ? Infinity : nums1[partitionX];
+//         let maxX = (partitionX === 0) ? -Infinity : nums1[partitionX - 1];
+//         let minX = (partitionX === m) ? Infinity : nums1[partitionX];
         
-        let maxY = (partitionY === 0) ? -Infinity : nums2[partitionY - 1];
-        let minY = (partitionY === n) ? Infinity : nums2[partitionY];
+//         let maxY = (partitionY === 0) ? -Infinity : nums2[partitionY - 1];
+//         let minY = (partitionY === n) ? Infinity : nums2[partitionY];
 
-        if (maxX <= minY && maxY <= minX) {
-            if ((m + n) % 2 === 0) {
-                return (Math.max(maxX, maxY) + Math.min(minX, minY)) / 2;
-            } else {
-                return Math.max(maxX, maxY);
-            }
-        } else if (maxX > minY) {
-            high = partitionX - 1;  // Move left
-        } else {
-            low = partitionX + 1;   // Move right
+//         if (maxX <= minY && maxY <= minX) {
+//             if ((m + n) % 2 === 0) {
+//                 return (Math.max(maxX, maxY) + Math.min(minX, minY)) / 2;
+//             } else {
+//                 return Math.max(maxX, maxY);
+//             }
+//         } else if (maxX > minY) {
+//             high = partitionX - 1;  // Move left
+//         } else {
+//             low = partitionX + 1;   // Move right
+//         }
+//     }
+    
+//     throw new Error("Input arrays are not sorted.");
+// }
+
+// // Testing the function with the examples
+// const test_case_1 = [1, 3], test_case_2 = [2];
+// const result_1 = findMedianSortedArrays(test_case_1, test_case_2);
+// console.log(result_1);  // Output: 2.0
+
+// const test_case_3 = [1, 2], test_case_4 = [3, 4];
+// const result_2 = findMedianSortedArrays(test_case_3, test_case_4);
+// console.log(result_2);  // Output: 2.5
+
+
+////questions 67//// 
+
+function removeDuplicates(nums) {
+    if (nums.length === 0) return 0;
+
+    let k = 1; 
+
+    for (let i = 1; i < nums.length; i++) {
+        
+        if (nums[i] !== nums[i - 1]) {
+            nums[k] = nums[i]; 
+            k++; 
         }
     }
-    
-    throw new Error("Input arrays are not sorted.");
+
+    return k; 
 }
 
-// Testing the function with the examples
-const test_case_1 = [1, 3], test_case_2 = [2];
-const result_1 = findMedianSortedArrays(test_case_1, test_case_2);
-console.log(result_1);  // Output: 2.0
+// Example usage:
 
-const test_case_3 = [1, 2], test_case_4 = [3, 4];
-const result_2 = findMedianSortedArrays(test_case_3, test_case_4);
-console.log(result_2);  // Output: 2.5
+let nums1 = [1, 1, 2];
+console.log(removeDuplicates(nums1)); // Output: 2, nums = [1, 2, ...]
 
+let nums2 = [0, 0, 1, 1, 1, 2, 2, 3, 3, 4];
+console.log(removeDuplicates(nums2)); // Output: 5, nums = [0, 1, 2, 3, 4, ...]
 
 
 
